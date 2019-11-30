@@ -5,30 +5,41 @@
  * Style variables
  */
 $base-font-family:     'Source Code Pro', monospace !default;
-$base-font-size:       12.5px !default;
-$mobile-font-size:     12px !default;
+$base-font-size:       16.5px !default;
+$mobile-font-size:     16.5px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
-$container-max-width:  600px !default;
+$container-max-width:  900px !default;
 
 /**
  * Global
  */
 body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
 h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
+h1 { font-size: 25px }
+h2 { font-size: 23px }
+h3 { font-size: 21px }
+h4 { font-size: 19px }
+h5 { font-size: 17px }
+
 p, ul, ol { margin: 0px;  color: var(--text-color); }
 a { text-decoration: underline;  color: var(--link-color); }
 a:hover { color: var(--background-color); background-color: var(--base-color); }
 .primary-text { color: var(--primary-color); }
 @media only screen and (max-device-width: 500px) { * { font-size: $mobile-font-size !important; } }
-/*h1:before { content: "#";  margin-right: 9px; }
+h1:before { content: "#";  margin-right: 9px; }
 h2:before { content: "##";  margin-right: 9px; }
 h3:before { content: "###";  margin-right: 9px; }
 h4:before { content: "####";  margin-right: 9px; }
 h5:before { content: "#####";  margin-right: 9px; }
-h6:before { content: "######";  margin-right: 9px; }*/
-
-/**
+h6:before { content: "######";  margin-right: 9px; }
+// table
+audio { width: 90%; } 
+//table { width: 100%; border-collapse: collapse; text-align: center; }
+td { border: 1px dashed rgba(255, 255, 255, 0.5); } 
+caption { display: none; } 
+table a { color: white; } 
+ /**
  * Layout
  */
 .container { width: $container-width;  max-width: $container-max-width;  margin-right: auto;  margin-left: auto; }
@@ -77,9 +88,10 @@ textarea { vertical-align: top; }
 /**
  * Code and syntax highlighting
  */
+.inlined {color: #aaaaaa}
 .lineno { color: var(--code-color-1); margin-right: 15px; }
 figure.highlight { margin: 5px 0; }
-pre { background-color: var(--background-color);  border: none;  padding: 0;  margin: 0;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  line-height: 1.7 !important;  font-family: $base-font-family !important; }
+pre { background-color: var(--background-color);  border: none;  padding: 5;  margin: 5;  overflow:auto;  font-size: $base-font-size;  color: var(--text-color);  line-height: 1.7 !important;  font-family: $base-font-family !important; }
 .highlight .hll { background-color: var(--code-color-2); }
 .highlight .c { color: var(--code-color-1); font-style: italic } /* Comment */
 .highlight .err { color: var(--code-color-3); background-color: var(--code-color-4); } /* Error */

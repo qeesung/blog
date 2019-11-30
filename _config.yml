@@ -13,3 +13,17 @@
 
 plugins:
   - jekyll-seo-tag
+
+title: 'qeesung.github.io'
+description: "💥🤘✋Give me four! ✋🤘💥"
+baseurl: ""
+url: "https://qeesung.github.io"
+
+header_pages:
+  - index.md
+  - project.md
+  - about.md
+
+style: dark
+
+footer: 'follow me on <a href="https://github.com/qeesung">github</a> ~=[,,_,,]:3'
