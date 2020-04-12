@@ -13,6 +13,7 @@
 
 plugins:
   - jekyll-seo-tag
+  - jemoji
 
 title: 'qeesung.github.io'
 description: "💥🤘✋Give me four! ✋🤘💥"
